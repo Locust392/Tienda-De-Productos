@@ -1,0 +1,23 @@
+<div class="container">
+  <h2 class="my-4">Lista deproductos</h2>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{product.id}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>
+        <button mat-icon-button [matTooltip]="'Ver detalle'" routerLink="/product/{{product.id}}">
+          <mat-icon>Visibility</mat-icon>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</div>

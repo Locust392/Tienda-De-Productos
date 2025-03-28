@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+//Colores
+.primary-color{
+  color: #cf7f16 !important;
+}
+.bg-primary-lighht{
+  background-color: #e3f2fd !important;
+}
+.text-primary{
+  color: #a06127;
+}
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.container{
+  padding: 20px;
+}
+
+//Botones
+button.mat-raised-button{
+  margin: 5px;
+  transition: transform 0.2s;
+}
+
+button.mat-raised-button:hover{
+  transform: scale(1.05);
+}
+
+//Cards
+.mat-card{
+  transition: box-shadow 0.3s;
+}
+
+.mat-card:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+//Tabla de productos
+.table{
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-hover tbody tr:hover{
+  background-color: #f8f9fa;
+}
+
+//efecto del carrito
+.cart-item{
+  transition: transform 0.2s;
+}
+
+.cart-item:hover{
+  transform: translateY(-5px);
+}
+
+//Navbar
+.navbar {
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar.bg-transparent {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: #a8562f !important;
+  font-size: 1.2rem;
+}
+
+.navbar-brand img {
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
+}
+
+.nav-link {
+  color: #238820 !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #9c209c !important;
+}
+
+.navbar-toggler {
+  border: 1px solid #4b7722 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,123,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
